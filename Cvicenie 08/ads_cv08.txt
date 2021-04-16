@@ -1,0 +1,25 @@
+
+G(V,E) - neorietovaný graf
+
+Snažíme sa nájsť minimálne vrcholové pokrytie (V' ⊆ V) tohto grafu také, že aspoň jeden vrchol každej hrany grafu patrí do množiny V' (pre ∀ hranu (u,v) ∈ E(G),  u ∈ V' alebo v ∈ V')  
+
+
+NP-úplný problém -> zatiaľ nepoznáme algoritmus, ktorý vie tento problém vyriešiť v polynomiálnom čase.
+Poznáme, ale algoritmus, ktorý vie v polynomiálnom čase najsť riešenie, ktoré môže, ale nemusí byť optimálne pričom v najhoršom prípade bude obsahovať konštantne násobne viac vrcholov ako je optimálny počet vrcholov.  
+
+
+C* - optimálne riešenie
+C - riešenie získané aproximáciou
+
+APROX-VERTEX-COVER(G)
+1.	C = ∅  //riešenie
+2.	E' = E(G)  // mnozina hrán grafu
+3.	while(E' != ∅):
+4.		vyber hranu (u,v) ∈ E'
+5.		C = C ∪ {u,v} // pridanie vrcholov, ktoré hrana spájala do riešenia
+6.		odstráň z E' všetky hrany incidentné s u alebo v
+7.	return C
+
+C v najhoršom prípade 2 x C* (|C| = 2 x |C*|)
+
+APROX-VERTEX-COVER -> Polynomiálny aproximačný algoritmus s aproximačnym pomerom 2.  
