@@ -18,7 +18,7 @@ def load_data_from_file(file_name: str):
     items = dict()  # all items
 
     with open(file_name, 'r') as file:
-        max_count = int(file.readline())  # max capacity of knapsack
+        max_count = int(file.readline())  # number of items
         max_weight = int(file.readline())  # max weight of knapsack
         max_fragile_count = int(file.readline())  # max number of fragile items
 
