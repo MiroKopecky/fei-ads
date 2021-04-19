@@ -1,7 +1,7 @@
 __author__ = 'Matúš Pohančenik'
-__credits__ = ["stackoverflow: https://bit.ly/3dwJpzM",
+__credits__ = ["stackoverflow: https://bit.ly/2OlKW35",
                "stackoverflow: https://bit.ly/3ufFCNQ"
-               "youtube: https://bit.ly/2OlKW35"]
+               "youtube: https://bit.ly/3dwJpzM"]
 
 import numpy as np
 
