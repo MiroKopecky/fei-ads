@@ -1,0 +1,15 @@
+Algoritmus na nájdenie optimálneho pokrytia vrcholov v strome:
+
+V každom kroku algoritmu hľadáme list stromu, ak list nájdeme, jeho rodiča pridáme do množiny pokrytia.
+Rodiča aj list/listy s ním spojené následne odstránime. Tento postup opakujeme pokiaľ v strome existuje aspoň 1 listy.
+
+VERTEX-COVER-TREES(G)
+1.    C = ∅
+2.    while ∃ list v G:
+3.        pridaj všetkých rodičov do C
+4.        odstráň z G všetky listy a ich rodičov
+5.    return C.
+
+
+Časová zložitosť - O(V)
+
