@@ -1,0 +1,5 @@
+Algoritmus odstraňovania uzlov v BST:
+
+Keď odstraňujeme uzol, ktorý je listom, uzol odstránime bez ďalších zmien.
+Keď odstraňujeme uzol, ktorý má 1 dieťa, uzol odstránime a nahradíme ho jeho dieťaťom.
+Keď odstraňujeme uzol, ktorý má 2 deti, uzol odstránime a môžeme ho nahradiť buď maximom z ľavého podstromu (predchodca) alebo minimom z pravého podstromu (nasledovník).
