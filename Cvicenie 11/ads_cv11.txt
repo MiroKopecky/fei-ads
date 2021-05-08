@@ -1,0 +1,4 @@
+Algoritmus pre BST ktorý ma n uzlov:
+
+[vlavo (0 uzlov) * vpravo (n-1 uzlov)] + [vlavo (1 uzol) * vpravo (n-2 uzlov)] + ... + [vlavo (n-1 uzlov) * vpravo (0 uzlov)]
+
